@@ -1,0 +1,21 @@
+.site-title {
+  padding: 15px 15px;
+  margin: 0;
+  font-size: 30px;
+  background-color: #80C0CF
+}
+
+.navlist {
+  margin: 0 0 0 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.navitem {
+  display: inline-block;
+}
+
+a {
+  color: #343434;
+  text-decoration: none;
+}
