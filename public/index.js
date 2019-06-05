@@ -15,3 +15,12 @@ window.onclick = function(event) {
     }
   }
 } 
+
+var button = document.getElementById('verb-button');
+var modal = document.getElementById('open-verb-modal');
+var backdrop = document.getElementById('modal-backdrop');
+button.addEventListener('click', function(event) {
+    modal.classList.toggle('hidden');
+    backdrop.classList.toggle('hidden');
+    console.log('I am here');
+});
