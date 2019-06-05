@@ -233,6 +233,16 @@ a {
     background-color: #1abc9c;
 }
 
+#starWars-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1010;
+    overflow: scroll;
+}
+
 #starWars-Button {
     padding: 20px;
 }
