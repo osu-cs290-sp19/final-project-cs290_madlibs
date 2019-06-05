@@ -2,48 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>MadLibbin</title>
-        
+        <title>MadLibbin</title>       
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
-		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-		
 		<link rel="stylesheet" href="/style.css" media="screen"> 
-        
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js" charset="utf-8"></script>
-
 		<script src="index.js" charset="utf-8" defer></script>	
-		
     </head>
 
-    <header>
-         <h1 class="site-title">Chicken Wings</h1>
-    </header>
-    
-    <nav class="navbar">
-        <ul class="navlist">
-            <li class="navitem navlink active"><a href="#">Home</a></li>
-            <li class="navitem navlink"><a href="#">Trending</a></li>
-            <li class="navitem navlink"><a href="#">People</a></li>
-        </ul>
-    </nav>
 
-    <body>
-      <nav>
-        <ul>
-          <li>Noun</li>
-          <ul>
-            <li>a word (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ).</li>
-          </ul>
-          <li>Verb</li>
-            <ul>a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen.</ul>
-        </ul>
-      </nav>
-    </body>
+	<header>
+		<a href="#"><h1 class="site-title">MadLibbin</h1></a>
 
+		<nav class="how-to-play">
+			<h3> How to use this website</h3>
+				<p> Click the buttons on the right to learn about verbs, nouns, and adjectives. Each button will give you examples of each type of word and what they mean. </p>
+				<p> Click on one of the madlib buttons to start filling out your madlib! </p>
+	</header>
 
 	<body>
-		<main class="button-container">
+		<main class="verb-container">
 
    			<button type="button" id="verb-button"><i class="VERBS">Verbs</i></button>
 				<div id="modal-backdrop" class="hidden"></div>
@@ -52,7 +30,6 @@
 
 						<div class="modal-header">
 							<h3> information about verbs</h3>
-							<button type="button" class="modal-close-button">&times;</button>
 						</div>
 
 						<div class="modal-body">
@@ -65,7 +42,10 @@
 						</div>
 					</div>
 				</div>
+		</main>
 
+
+		<main class="noun-container">
 			<button type="button" id="noun-button"><i class="NOUNS"> Nouns</i></button>
 				<div id="modal-backdrop" class="hidden"></div>
 				<div id="open-verb-modal" class="hidden">
@@ -73,16 +53,23 @@
 
 						<div class="modal-header">
 							<h3> information about verbs</h3>
-								<p> a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen. </p>
 						</div>
+						
+						<div class="modal-body">
+							<div class="noun-info">
+								<label for="noun-description"> 
+								 a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen. </label>
+							</div>
 
 						<div class="modal-footer">
 							<button type="button" class="modal-cancel-button">cancel</button>
 						</div>
 					</div>
 				</div>
+		</main>
 
 
+		<main class="adjective-container">
 			<button type="button" id="adjective-button"><i class="ADJECTIVES">Adjectives</i></button>
 				<div id="modal-backdrop" class="hidden"></div>
 				<div id="open-verb-modal" class="hidden">
@@ -90,20 +77,29 @@
 
 						<div class="modal-header">
 							<h3> information about adjectives</h3>
-								<p> a word or phrase naming an attribute, added to or grammatically related to a noun to modify or describe it. </p>
 						</div>
-
+						
+						<div class="modal-body">
+							<div class="adjective-info">
+								<label for="adjective-description">
+							 		a word or phrase naming an attribute, added to or grammatically related to a noun to modify or describe it. </label>
+							</div>
+							 
 						<div class="modal-footer">
 							<button type="button" class="modal-cancel-button">cancel</button>
 						</div>
 					</div>
 				</div>
-
 		</main>
-
-		<button type="button" id="starwars-button"><i class="StarWars-Madlib">StarWars Madlib</i></button>
-		<button type="button" id="verb-button"><i class="Special-Madlib">Special Madlib</i></button>
-
+		
+	
+		<main class="madlib-container">
+			<button type="button" id="starwars-button"><i class="StarWars-Madlib">StarWars Madlib</i></button>
+				<div id="drop-down" class="hidden"></div>
+				
+			<button type="button" id="verb-button"><i class="Special-Madlib">Special Madlib</i></button>
+				<div id="drop-down" class="hidden"></div>
+		</main>
 
 	</body>
 </html>
