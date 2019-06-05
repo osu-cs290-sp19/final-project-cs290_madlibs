@@ -24,9 +24,10 @@
 		<main class="verb-container">
 
    			<button type="button" id="verb-button"><i class="VERBS">Verbs</i></button>
-				<div id="modal-backdrop" class="hidden"></div>
-				<div id="open-verb-modal" class="hidden">
-					<div class="list-of-verbs">
+				
+                <div id="modal-backdrop" class="hidden"></div>
+				<div id="open-modal" class="hidden">
+					<div class="modal-dialog">
 
 						<div class="modal-header">
 							<h3> information about verbs</h3>
@@ -34,21 +35,44 @@
 
 						<div class="modal-body">
 							<div class="verb-info">
-								<label for="verb-description"> a word (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ).</label>
+                                <p id="verb-definition">a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen..</p>
 							</div>
 
 						<div class="modal-footer">
-							<button type="button" class="modal-cancel-button">cancel</button>
+							<button type="button" class="modal-close-button">close</button>
 						</div>
 					</div>
 				</div>
+            </div>
+            
+            <button type="button" id="noun-button"><i class="NOUN">Nouns</i></button>
+				
+                <div id="modal-backdrop" class="hidden"></div>
+				<div id="open-modal" class="hidden">
+					<div class="modal-dialog">
+
+						<div class="modal-header">
+							<h3> information about noun</h3>
+						</div>
+
+						<div class="modal-body">
+							<div class="noun-info">
+                                <p id="noun-definition">a word (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ).</p>
+							</div>
+
+						<div class="modal-footer">
+							<button type="button" class="modal-close-button">close</button>
+						</div>
+					</div>
+				</div>
+            </div>
 		</main>
 
 
-		<main class="noun-container">
+		<!-- <main class="noun-container">
 			 type="button" id="verb-button"><i class="Special-Madlib">Special Madlib</i></button>
 				<div id="drop-down" class="hidden"></div>
-		</main>
+		</main> -->
 
 	</body>
 </html>
