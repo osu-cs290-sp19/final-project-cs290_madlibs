@@ -16,10 +16,6 @@ window.onclick = function(event) {
   }
 } 
 
-// function clearModal(label) {
-//     document.getElementById(label). = "";
-// }
-
 // OPENS THE VERB MODAL WHEN THE VERB BUTTON IS CLICKED
 var verbButton = document.getElementById('verb-button');
 var modal = document.getElementById('open-modal');
@@ -27,33 +23,29 @@ var backdrop = document.getElementById('modal-backdrop');
 verbButton.addEventListener('click', function(event) {
     modal.classList.toggle('hidden');
     backdrop.classList.toggle('hidden');
-    console.log('I am here');
 });
 
 // CLOSES THE VERB MODAL WHEN THE CLOSE-VERB BUTTON IS CLICKED
-var closeVerbButton = document.getElementsByClassName('modal-close-button')[0];
-var verbLabel = document.getElementById('verb-definition');
+var closeVerbButton = document.getElementsByClassName('modal-verb-button')[0];
 closeVerbButton.addEventListener('click', function(event){
     modal.classList.toggle('hidden');
     backdrop.classList.toggle('hidden');
-    verbLabel.innerHTML="";
 });
 
+// OPENS THE NOUN MODAL WHEN THE NOUN BUTTON IS CLICKED
 var nounButton = document.getElementById('noun-button');
 var modal = document.getElementById('open-modal');
 var backdrop = document.getElementById('modal-backdrop');
 nounButton.addEventListener('click', function(event) {
     modal.classList.toggle('hidden');
     backdrop.classList.toggle('hidden');
-    console.log('I am here');
 });
 
-var closeNounButton = document.getElementsByClassName('modal-close-button')[0];
-var nounLabel = document.getElementById('noun-definition');
+// CLOSES THE NOUN MODAL WHEN THE NOUN BUTTON IS CLICKED
+var closeNounButton = document.getElementsByClassName('modal-noun-button')[0];
 closeNounButton.addEventListener('click', function(event){
     modal.classList.toggle('hidden');
     backdrop.classList.toggle('hidden');
-    nounLabel.innerHTML="";
 });
 
 
