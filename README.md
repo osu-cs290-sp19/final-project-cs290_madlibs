@@ -1,6 +1,6 @@
 # final-project-cs290_madlibs
 
-Grading critria 
+Grading critria
 
 50 points – Your app satisfies these requirements:
 
@@ -21,3 +21,5 @@ For example, your app is free of bugs and has an effective user interface.
 
 25 points – Your app is creative and original.
 If, for example, your app is simply a repackaging of the app we develop together during lecture or the one you developed during your assignments this term, you will likely not score highly in this category.
+
+---------------------------------------------------------------------------
