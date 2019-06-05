@@ -1,44 +1,44 @@
 VADER:
-There is no escape.  Don't make
-me destroy you.  You do not yet
+There is no (Noun).  Don't make
+me (Verb) you.  You do not yet
 realize your importance.  You
 have only begun to discover your
-power.  Join me and I will complete
+(Noun2).  Join me and I will complete
 your training.  With our combined
 strength, we can end this destructive
-conflict and bring order to the
-galaxy.
+(Noun) and bring order to the
+(Noun).
 
 LUKE:
 I'll never join you!
 
 VADER:
-If you only knew the power of the
-dark side.  Obi-Wan never told
-you what happened to your father.
+If you only knew the (Noun2) of the
+(Adjective) side.  Obi-Wan never told
+you what happened to your (Noun).
 
 LUKE:
 He told me enough!  It was you
 who killed him.
 
 VADER:
-No.  I am your father.
+No.  I am your (Noun1).
 
 LUKE:
 No.  No.  That's not true!
 That's impossible!
 
 VADER:
-Search your feelings.  You know
+Search your (verb).  You know
 it to be true.
 
 LUKE:
 No!  No!  No!
 
 VADER:
-Luke.  You can destroy the Emperor.
+Luke.  You can destroy the (Noun).
 He has foreseen this.  It is your
 destiny.  Join me, and together
-we can rule the galaxy as father
-and son.  Come with me.  It is the
+we can rule the (Noun) as (Noun1)
+and (Noun).  Come with me.  It is the
 only way.
