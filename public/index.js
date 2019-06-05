@@ -74,6 +74,16 @@ advCloseButton.addEventListener('click', function(event){
   modal.classList.toggle('hidden');
 });
 
+var starwarsButton = document.getElementById('starWars-Button');
+var starwarsModal = document.getElementById('starWars-modal');
+starwarsButton.addEventListener('click', function(event){
+    console.log('cows');
+    starwarsModal.classList.toggle('hidden');
+    console.log('log');
+    modal.classList.toggle('hidden');
+});
+
+
 
 
 
