@@ -18,20 +18,12 @@
 .how-to-play {
 	padding: 10px 40px;
 	border: 2px; // solid #8e8d8a;
-	background-color: #e98074; 
+	background-color: #e98074;
 }
 
-.verb-container {
+.grammar-container {
 	padding: 10px 20px;
-	//background-color: #e98074; 
-}
-
-.noun-container {
-	padding: 10px 20px;
-}
-
-.adjective-container {
-	padding: 10px 20px;
+	//background-color: #e98074;
 }
 
 
@@ -91,7 +83,7 @@ a {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-#open-modal {
+#verb-modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -100,6 +92,47 @@ a {
   z-index: 1010;
   overflow: scroll;
 }
+
+#noun-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+#adj-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+#pro-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+#adv-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
 
 .modal-dialog {
   width: auto;
@@ -134,7 +167,3 @@ a {
   justify-content: flex-end;
   padding: 10px 10px 20px 10px;
 }
-
-
-
-

@@ -2,12 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>MadLibbin</title>       
+        <title>MadLibbin</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-		<link rel="stylesheet" href="./style.css" media="screen"> 
+		<link rel="stylesheet" href="./style.css" media="screen">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js" charset="utf-8"></script>
-		<script src="index.js" charset="utf-8" defer></script>	
+		<script src="index.js" charset="utf-8" defer></script>
     </head>
 
 
@@ -16,63 +16,105 @@
 
 		<nav class="how-to-play">
 			<h3> How to use this website</h3>
-				<p> Click the buttons on the right to learn about verbs, nouns, and adjectives. Each button will give you examples of each type of word and what they mean. </p>
+				<p> Click the buttons on the right to learn about verbs, nouns, adjectives, pronouns, or adverbs. Each button will give you examples of each type of word and what they mean. </p>
 				<p> Click on one of the madlib buttons to start filling out your madlib! </p>
 	</header>
 
 	<body>
-		<main class="verb-container">
+    <div class="grammar-container">
 
-   			<button type="button" id="verb-button"><i class="VERBS">Verbs</i></button>
-				
-                <div id="modal-backdrop" class="hidden"></div>
-				<div id="open-modal" class="hidden">
-					<div class="modal-dialog">
+      <button type="button" id="verb-Button"> <i class="VERB">Verbs</i> </button>
+      <button type="button" id="noun-Button"> <i class="NOUN">Nouns</i> </button>
+      <button type="button" id="adj-Button"> <i class="ADJECTIVE">Adjectives</i> </button>
+      <button type="button" id="pro-Button"> <i class="PRONOUN">Pronoun</i> </button>
+      <button type="button" id="adv-Button"> <i class="ADVERB">Adverbs</i> </button>
 
-						<div class="modal-header">
-							<h3> information about verbs</h3>
-						</div>
-
-						<div class="modal-body">
-							<div class="verb-element">
-                                <p id="verb-definition">a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen..</p>
-							</div>
-
-						<div class="modal-footer">
-							<button type="button" class="modal-verb-button">close</button>
-						</div>
-					</div>
-				</div>
+      <div id="modal-backdrop" class="hidden"></div>
+      <div id="verb-modal" class="hidden">
+        <div class="modal-dialog">
+          <div class="modal-header">
+              <h3>Information about verbs</h3>
+          </div>
+          <div class="modal-body">
+            <div class="verb-element">
+              <p id="verb-definition">a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen..</p>
             </div>
-            
-            <button type="button" id="noun-button"><i class="NOUN">Nouns</i></button>
-				
-                <div id="modal-backdrop" class="hidden"></div>
-				<div id="open-modal" class="hidden">
-					<div class="modal-dialog">
-
-						<div class="modal-header">
-							<h3> information about noun</h3>
-						</div>
-
-						<div class="modal-body">
-							<div class="noun-element">
-                                <p id="noun-definition">a word (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ).</p>
-							</div>
-
-						<div class="modal-footer">
-							<button type="button" class="modal-noun-button">close</button>
-						</div>
-					</div>
-				</div>
+            <div class="modal-footer">
+              <button type="button" id="close-verb-button" >close</button>
             </div>
-		</main>
+          </div>
+        </div>
+      </div>
 
+      <div id="noun-modal" class="hidden">
+        <div class="modal-dialog">
+          <div class="modal-header">
+              <h3>Information about verbs</h3>
+          </div>
+          <div class="modal-body">
+            <div class="noun-element">
+              <p id="verb-definition">a word (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ).</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="close-noun-button" >close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<!-- <main class="noun-container">
-			 type="button" id="verb-button"><i class="Special-Madlib">Special Madlib</i></button>
-				<div id="drop-down" class="hidden"></div>
-		</main> -->
+      <div id="adj-modal" class="hidden">
+        <div class="modal-dialog">
+          <div class="modal-header">
+              <h3>Information about adjectives</h3>
+          </div>
+          <div class="modal-body">
+            <div class="adj-element">
+              <p id="verb-definition">An adjective modifies (limits or describes) a noun or a pronoun.  Essentially, it provides more information about a person, place, or thing. For instance, in the sentence Frank is a tall, skinny man, both tall and skinny are adjectives as they are used to describe Frank. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="close-adj-button" >close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Pronouns/-->
+      <div id="pro-modal" class="hidden">
+        <div class="modal-dialog">
+          <div class="modal-header">
+              <h3>Information about pronouns</h3>
+          </div>
+          <div class="modal-body">
+            <div class="pro-element">
+              <p id="verb-definition">A pronoun is a word that is used to replace a noun  For example, instead of saying “Sam likes pizza” we can use “He” as a substitute for Sam.  Writers need to be careful with pronoun use, as pronouns should only be used after a noun has been used first, and it must be clear which noun the pronoun is replacing.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="close-pro-button" >close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Adverbs/-->
+      <div id="adv-modal" class="hidden">
+        <div class="modal-dialog">
+          <div class="modal-header">
+              <h3>Information about adverbs</h3>
+          </div>
+          <div class="modal-body">
+            <div class="adv-element">
+              <p id="verb-definition">Similar to adjectives, an adverb modifies a verb, an adjective, or another adverb. In the sentence Susan walked slowly towards the door, the word slowly serves as an adverb since it describes how she walked.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="close-adv-button" >close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 	</body>
 </html>
