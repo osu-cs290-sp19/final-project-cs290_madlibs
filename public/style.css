@@ -167,3 +167,16 @@ a {
   justify-content: flex-end;
   padding: 10px 10px 20px 10px;
 }
+
+.madlib-container {
+    padding: 20px;
+    background-color: #1abc9c;
+}
+
+#starwars-Button {
+    padding: 20px;
+}
+
+#special-Button {
+    padding: 20px;
+}
