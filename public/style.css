@@ -16,31 +16,91 @@
 }
 
 .how-to-play {
+	display: block;
+	font-family:  Roboto, Helveica, sans-serif;
 	padding: 10px 40px;
-	border: 2px; // solid #8e8d8a;
+	//border: 2px; // solid #8e8d8a;
 	background-color: #e98074;
+	color: #eae7dc;
 }
 
 .grammar-container {
-	padding: 10px 20px;
-	//background-color: #e98074;
+	padding: 10px 40px;
+	//width: 150px;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	float: right;
+	background-color: #e98074;
 }
 
-
-/*.navbar {
-  background-color: #fff;
-  font-size: 18px;
-  line-height: 22px;
+#verb-Button {
+	padding: 10px 40px;
+	//margin: 20px;
+	position: fixed;
+	right: 50px;
+	bottom: 350px;
+	width: 75px;
+	height: 75px;
 }
 
-.navlist {
-  margin: 0 0 0 20px;
-  padding: 0;
+#noun-Button {
+	padding: 10px 40px;
+	//margin: 20px;
+	position: fixed;
+	right: 50px;
+	bottom: 300px;
+	width: 75px;
+	height: 75px;
+
+	//margin: 20px;
+	//position: fixed;
+	/*width: 75px;
+	height: 100px;*/		
 }
 
-.navitem {
-  display: inline-block;
-}*/
+#pro-Button {
+	padding: 10px 40px;
+	margin: 20px;
+	position: fixed;
+	right: 50px;
+	bottom: 250px;
+	width: 75px;
+	height: 75px;
+//margin: 20px;
+	//position: fixed;
+	/*width: 75px;
+	height: 75px;*/		
+}
+
+#adj-Button { 
+	padding: 10px 40px;
+	//margin: 20px;
+	position: fixed;
+	right: 50px;
+	bottom: 200px;
+	width: 75px;
+	height: 75px;
+//margin: 20px;
+	//position: fixed;
+	/*width: 75px;
+	height: 50px;	*/	
+}
+
+#adv-Button {
+	padding: 10px 40px;
+	//margin: 20px;
+	position: fixed;
+	right: 50px;
+	bottom: 150px;
+	width: 75px;
+	height: 75px;
+//margin: 20px;
+	//position: fixed;
+	/*width: 75px;
+	height: 50px;*/	
+}
 
 a:hover,
 a:focus {
