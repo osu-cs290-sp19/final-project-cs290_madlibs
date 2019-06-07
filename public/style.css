@@ -1,4 +1,68 @@
- html, body {
+html{
+  height: 100%;
+}
+
+body{
+  position: relative;
+  min-height: 100%;
+  top: 0px;
+  margin: 0;
+  	background-color: #EAE7DC;
+}
+
+.site-title{
+  position: relative;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 75px;
+  font-weight: 150;
+  color: #e85a4f;
+
+  /* top: 0px;
+  margin: 0px;
+  background-color: #e85a4f;
+  height: 74px;
+  padding-top: 20ps;
+  line-height: normal;
+  overflow: hidden;
+  z-index: 2; */
+}
+header a{
+  text-decoration: none;
+}
+
+.how-to-play{
+  /* width: 100%; */
+  display: block;
+	font-family:  Roboto, Helveica, sans-serif;
+  margin: 0;
+	padding: 10px 40px;
+	background-color: #e98074;
+	color: #eae7dc;
+
+}
+
+/*---------grammar container-------------*/
+.grammar-container{
+  height: 100%;
+  width: 200px;
+  background-color: #e98074;
+  position: fixed;
+  right: 0px;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.grammar-container button{
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 16px;
+    width: 160px;
+}
+
+ /* html, body {
 	font-family: Roboto, Helveica, sans-serif;
 	margin: 0;
 	background-color: #EAE7DC;
@@ -22,87 +86,29 @@
 	//border: 2px; // solid #8e8d8a;
 	background-color: #e98074;
 	color: #eae7dc;
-}
+} */
 
-.grammar-container {
-	padding: 10px 40px;
-	//width: 150px;
-	height: 800px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+
+/*grammar container*/
+
+
+/* .grammar-container {
 	float: right;
 	background-color: #e98074;
 }
 
-#verb-Button {
-	padding: 10px 40px;
-	//margin: 20px;
-	position: fixed;
-	right: 50px;
-	bottom: 350px;
-	width: 75px;
-	height: 75px;
+.grammar-container li{
+  list-style: none;
+  display:
 }
 
-#noun-Button {
-	padding: 10px 40px;
-	//margin: 20px;
-	position: fixed;
-	right: 50px;
-	bottom: 300px;
-	width: 75px;
-	height: 75px;
+.grammar-container li button{
 
-	//margin: 20px;
-	//position: fixed;
-	/*width: 75px;
-	height: 100px;*/		
-}
+} */
 
-#pro-Button {
-	padding: 10px 40px;
-	margin: 20px;
-	position: fixed;
-	right: 50px;
-	bottom: 250px;
-	width: 75px;
-	height: 75px;
-//margin: 20px;
-	//position: fixed;
-	/*width: 75px;
-	height: 75px;*/		
-}
 
-#adj-Button { 
-	padding: 10px 40px;
-	//margin: 20px;
-	position: fixed;
-	right: 50px;
-	bottom: 200px;
-	width: 75px;
-	height: 75px;
-//margin: 20px;
-	//position: fixed;
-	/*width: 75px;
-	height: 50px;	*/	
-}
-
-#adv-Button {
-	padding: 10px 40px;
-	//margin: 20px;
-	position: fixed;
-	right: 50px;
-	bottom: 150px;
-	width: 75px;
-	height: 75px;
-//margin: 20px;
-	//position: fixed;
-	/*width: 75px;
-	height: 50px;*/	
-}
-
-a:hover,
+/*----------------------------------*/
+/* a:hover,
 a:focus {
   color: #319df6;
 }
@@ -131,7 +137,7 @@ a {
     background: #1abc9c;
     color: white;
     font-size: 30px;
-}
+} */
 
 #modal-backdrop {
   position: fixed;
@@ -233,6 +239,11 @@ a {
     background-color: #1abc9c;
 }
 
+.madlib-buttons{
+  display: inline-block;
+  text-align: center;
+}
+
 #starWars-modal{
     position: fixed;
     top: 0;
@@ -244,9 +255,11 @@ a {
 }
 
 #starWars-Button {
+    width: 160px;
     padding: 20px;
 }
 
 #special-Button {
+    width: 160px;
     padding: 20px;
 }

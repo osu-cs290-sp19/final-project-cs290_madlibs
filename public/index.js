@@ -77,45 +77,22 @@ advCloseButton.addEventListener('click', function(event){
 var starwarsButton = document.getElementById('starWars-Button');
 var starwarsModal = document.getElementById('starWars-modal');
 starwarsButton.addEventListener('click', function(event){
-    console.log('cows');
     starwarsModal.classList.toggle('hidden');
-    console.log('log');
+    modal.classList.toggle('hidden');
+    var textInputs = document.getElementsByTagName('textarea');
+    for(var i = 0; i < textInputs.length; i++){
+      textInputs[i].value = "";
+    }
+});
+
+var starWarsGlobalCancel = document.getElementById('star-wars-modal-close-button');
+starWarsGlobalCancel.addEventListener('click', function(event){
+    starwarsModal.classList.toggle('hidden');
     modal.classList.toggle('hidden');
 });
 
-
-
-
-
-// OPENS THE VERB MODAL WHEN THE VERB BUTTON IS CLICKED
-// var verbButton = document.getElementById('verb-button');
-// var verbModal = document.getElementById('open-modal-verb');
-// var nounModal = document.getElementById('open-modal-noun');
-// var backdrop = document.getElementById('modal-backdrop');
-// verbButton.addEventListener('click', function(event) {
-//     modal.classList.toggle('hidden');
-//     backdrop.classList.toggle('hidden');
-// });
-//
-// // CLOSES THE VERB MODAL WHEN THE CLOSE-VERB BUTTON IS CLICKED
-// var closeVerbButton = document.getElementsByClassName('modal-verb-button')[0];
-// closeVerbButton.addEventListener('click', function(event){
-//     modal.classList.toggle('hidden');
-//     backdrop.classList.toggle('hidden');
-// });
-//
-// // OPENS THE NOUN MODAL WHEN THE NOUN BUTTON IS CLICKED
-// var nounButton = document.getElementById('noun-button');
-// var modal = document.getElementById('open-modal-noun');
-// var backdrop = document.getElementById('modal-backdrop');
-// nounButton.addEventListener('click', function(event) {
-//     modal.classList.toggle('hidden');
-//     backdrop.classList.toggle('hidden');
-// });
-//
-// // CLOSES THE NOUN MODAL WHEN THE NOUN BUTTON IS CLICKED
-// var closeNounButton = document.getElementsByClassName('modal-noun-button')[0];
-// closeNounButton.addEventListener('click', function(event){
-//     modal.classList.toggle('hidden');
-//     backdrop.classList.toggle('hidden');
-// });
+var starWarsCancelButton = document.getElementById('star-wars-modal-cancel-button');
+starWarsCancelButton.addEventListener('click', function(event){
+    starwarsModal.classList.toggle('hidden');
+    modal.classList.toggle('hidden');
+});

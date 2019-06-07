@@ -22,13 +22,14 @@
 
 	<body>
     <div class="grammar-container">
-
-      <button type="button" id="verb-Button"> <i class="VERB">Verbs</i> </button>
-      <button type="button" id="noun-Button"> <i class="NOUN">Nouns</i> </button>
-      <button type="button" id="adj-Button"> <i class="ADJECTIVE">Adjectives</i> </button>
-      <button type="button" id="pro-Button"> <i class="PRONOUN">Pronoun</i> </button>
-      <button type="button" id="adv-Button"> <i class="ADVERB">Adverbs</i> </button>
-
+        <button type="button" id="verb-Button"> <i class="VERB">Verbs</i></button>
+        <button type="button" id="noun-Button"> <i class="NOUN">Nouns</i></button>
+        <button type="button" id="adj-Button"> <i class="ADJECTIVE">Adjectives</i></button>
+        <button type="button" id="pro-Button"> <i class="PRONOUN">Pronoun</i></button>
+        <button type="button" id="adv-Button"> <i class="ADVERB">Adverbs</i></button>
+    </div>
+    <!-- grammar modals -->
+    <div class="grammar-modals">
       <div id="modal-backdrop" class="hidden"></div>
       <div id="verb-modal" class="hidden">
         <div class="modal-dialog">
@@ -113,20 +114,24 @@
           </div>
         </div>
       </div>
+    </div>
+
 
       <!-- Star Wars Inputs -->
-      
 
-    </div>
     <div class="madlib-container">
+      <div class="madlib-buttons">
         <button type="button" id="starWars-Button"><i class="STARWARS">Star Wars Madlib</i></button>
-		
+        <button type="button" id="special-Button"><i class="SPECIAL">Special Madlib</i></button>
+      </div>
+
+
 		<div id="starWars-modal" class="hidden">
 			<div class="modal-dialog">
 
 				<div class="modal-header">
 					<h3>Input Words</h3>
-					<button type="button" class="modal-close-button">&times;</button>
+					<button type="button" id="star-wars-modal-close-button">&times;</button>
 				</div>
 
 				<div class="modal-body">
@@ -175,10 +180,10 @@
 						<textarea id="noun-text"></textarea>
 					</div>
 				</div>
-				
+
 				<div class="modal-footer">
-					<button type="button" class="modal-cancel-button">Cancel</button>
-					<button type="button" class="modal-accept-button">Create MadLib</button>
+					<button type="button" id="star-wars-modal-cancel-button">Cancel</button>
+					<button type="button" id="star-wars-modal-accept-button">Create MadLib</button>
 						<div id="modal-backdrop" class="hidden"></div>
 						<div id="create-twit-modal" class="hidden">
 							<div class="modal-header">
@@ -229,20 +234,16 @@
 									destiny.  Join me, and together
 									we can rule the (Noun) as (Noun1)
 									and (Noun).  Come with me.  It is the
-									only way.</p>  
+									only way.</p>
 								</div>
 							</div>
 
-							<div class="modal-footer">
-								<button type="button" class="modal-cancel-button">Cancel</button>
-							</div>
-						
 						</div>
 				</div>
 			</div>
 		</div>
-		
-        <button type="button" id="special-Button"><i class="SPECIAL">Special Madlib</i></button>
+
+
 
 
 
