@@ -38,7 +38,7 @@ header a{
   height: 100%;
   width: 200px;
   background-color: #e98074;
-  position: fixed;
+  position: absolute;
   right: 0px;
   display: block;
   text-align: center;
@@ -51,6 +51,7 @@ header a{
     margin-right: 15px;
     margin-top: 16px;
     width: 160px;
+    bottom: 0;
 }
 
 #modal-backdrop {
@@ -149,13 +150,27 @@ header a{
 }
 
 .madlib-container {
-    padding: 20px;
-    background-color: #1abc9c;
+    background-color: #EAE7DC;
+}
+
+.madlib-buttons{
+  background-color: #1abc9c;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+}
+
+#star-wars-text{
+  text-align: center;
+  background-color: #EAE7DC;
+  margin: 0;
+  left: 0;
 }
 
 .madlib-buttons{
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #starWars-modal{
@@ -176,4 +191,32 @@ header a{
 #special-Button {
     width: 160px;
     padding: 20px;
+}
+
+.modal-header h3{
+text-align: center;
+}
+
+#starWars-modal #star-wars-modal-close-button{
+  float: right;
+}
+
+.modal-body{
+  display: block;
+  text-align: center;
+}
+
+.input-element{
+
+}
+
+.modal-body label{
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  width: 80px;
+}
+
+.modal-body textarea{
+  width: 250px;
 }
