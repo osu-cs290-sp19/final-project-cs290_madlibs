@@ -1,6 +1,9 @@
 html{
   height: 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3313edb28d5d33c1465551e3c74fadb2449e4a01
 }
 
 body{
@@ -174,6 +177,7 @@ header a{
   margin: 0;
   padding: 20px;
   text-align: left;
+  display: inline-block;
 }
 
 #star-wars-text{
@@ -181,11 +185,6 @@ header a{
   background-color: #EAE7DC;
   margin: 0;
   left: 0;
-}
-
-.madlib-buttons{
-  display: inline-block;
-  /* text-align: center; */
 }
 
 #starWars-modal{
