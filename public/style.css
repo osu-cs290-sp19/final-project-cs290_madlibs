@@ -1,10 +1,13 @@
 html{
   height: 100%;
+  
 }
 
 body{
   position: relative;
   min-height: 100%;
+  width: 100%;
+  height: 100%
   top: 0px;
   margin: 0;
   	background-color: #EAE7DC;
@@ -52,6 +55,17 @@ header a{
     margin-top: 16px;
     width: 160px;
     bottom: 0;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #1abc9c;
+    font-size: 12pt;
+    font-style: normal;
+    box-shadow: 3px 3px #000;
+}
+
+.grammar-container button:hover{
+    background-color: #5699c6;
+    padding: 25px;
 }
 
 #modal-backdrop {
@@ -151,6 +165,7 @@ header a{
 
 .madlib-container {
     background-color: #EAE7DC;
+    width: 100%;
 }
 
 .madlib-buttons{
@@ -183,15 +198,55 @@ header a{
     overflow: scroll;
 }
 
-#starWars-Button {
-    width: 160px;
+.madlib-buttons button{
     padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 16px;
+    width: 160px;
+    bottom: 0;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #e98074;;
+    font-size: 12pt;
+    font-style: normal;
+    box-shadow: 3px 3px #000;
+}
+
+.madlib-buttons button:hover{
+    background-color: #5699c6;
+    padding: 25px;
+}
+
+/* #starWars-Button {
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 16px;
+    width: 160px;
+    bottom: 0;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #fdd5b9;
+    font-size: 12pt;
+    font-style: normal;
+    box-shadow: 3px 3px #000;
 }
 
 #special-Button {
-    width: 160px;
     padding: 20px;
-}
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 16px;
+    width: 160px;
+    bottom: 0;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #fdd5b9;
+    font-size: 12pt;
+    font-style: normal;
+    box-shadow: 3px 3px #000;
+} */
 
 .modal-header h3{
 text-align: center;
