@@ -111,6 +111,8 @@ starWarsAccept.addEventListener('click', function(event){
   var noun8 = document.getElementById('SNOUN8');
   var adj1 = document.getElementById('SADJ1');
 
+  var noun42 = document.getElementById('SNOUN4-2');
+
   var textArea = document.getElementsByTagName('textarea');
 
   verb1.innerHTML = textArea[0].value;
@@ -124,6 +126,9 @@ starWarsAccept.addEventListener('click', function(event){
   noun7.innerHTML = textArea[8].value;
   noun8.innerHTML = textArea[9].value;
   adj1.innerHTML = textArea[10].value;
+
+  noun42.innerHTML = textArea[5].value;
+
   starwarsModal.classList.toggle('hidden');
   modal.classList.toggle('hidden');
 
