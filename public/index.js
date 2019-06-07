@@ -96,3 +96,38 @@ starWarsCancelButton.addEventListener('click', function(event){
     starwarsModal.classList.toggle('hidden');
     modal.classList.toggle('hidden');
 });
+
+var starWarsAccept = document.getElementById("star-wars-modal-accept-button");
+starWarsAccept.addEventListener('click', function(event){
+  var verb1 = document.getElementById('SVERB1');
+  var verb2 = document.getElementById('SVERB2');
+  var noun1 = document.getElementById('SNOUN1');
+  var noun2 = document.getElementById('SNOUN2');
+  var noun3 = document.getElementById('SNOUN3');
+  var noun4 = document.getElementById('SNOUN4');
+  var noun5 = document.getElementById('SNOUN5');
+  var noun6 = document.getElementById('SNOUN6');
+  var noun7 = document.getElementById('SNOUN7');
+  var noun8 = document.getElementById('SNOUN8');
+  var adj1 = document.getElementById('SADJ1');
+
+  var textArea = document.getElementsByTagName('textarea');
+
+  verb1.innerHTML = textArea[0].value;
+  verb2.innerHTML = textArea[1].value;
+  noun1.innerHTML = textArea[2].value;
+  noun2.innerHTML = textArea[3].value;
+  noun3.innerHTML = textArea[4].value;
+  noun4.innerHTML = textArea[5].value;
+  noun5.innerHTML = textArea[6].value;
+  noun6.innerHTML = textArea[7].value;
+  noun7.innerHTML = textArea[8].value;
+  noun8.innerHTML = textArea[9].value;
+  adj1.innerHTML = textArea[10].value;
+  starwarsModal.classList.toggle('hidden');
+  modal.classList.toggle('hidden');
+
+  var swtext = document.getElementById('star-wars-text');
+  swtext.classList.toggle('hidden');
+
+})

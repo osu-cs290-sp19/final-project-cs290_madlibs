@@ -54,7 +54,7 @@
           </div>
           <div class="modal-body">
             <div class="noun-element">
-              <p id="verb-definition">a word (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ).</p>
+              <p id="verb-definition">a word <var id="other than a pronoun"></var> used to identify any of a class of people, places, or things <var id=" common noun "></var>, or to name a particular one of these <var id=" proper noun "></var>.</p>
             </div>
             <div class="modal-footer">
               <button type="button" id="close-noun-button" >close</button>
@@ -70,7 +70,7 @@
           </div>
           <div class="modal-body">
             <div class="adj-element">
-              <p id="verb-definition">An adjective modifies (limits or describes) a noun or a pronoun.  Essentially, it provides more information about a person, place, or thing. For instance, in the sentence Frank is a tall, skinny man, both tall and skinny are adjectives as they are used to describe Frank. </p>
+              <p id="verb-definition">An adjective modifies <var id="limits or describes"></var> a noun or a pronoun.  Essentially, it provides more information about a person, place, or thing. For instance, in the sentence Frank is a tall, skinny man, both tall and skinny are adjectives as they are used to describe Frank. </p>
             </div>
             <div class="modal-footer">
               <button type="button" id="close-adj-button" >close</button>
@@ -135,9 +135,56 @@
 				</div>
 
 				<div class="modal-body">
-					<div class="noun-input-element">
-						<label for="noun-text">Noun:</label>
-						<textarea id="noun-text"></textarea>
+          <!-- <div class="verb-input-element">
+            <label for="verb-text">Verb1:</label>
+            <textarea id="SVERB1-textArea"></textarea>
+          </div>
+          <div class="verb-input-element">
+            <label for="verb-text">Verb2:</label>
+            <textarea id="SVERB2-textArea"></textarea>
+          </div>
+
+          <div class="noun-input-element">
+            <label for="noun-text">Noun1:</label>
+            <textarea id="SNOUN1-textArea"></textarea>
+          </div>
+          <div class="noun-input-element">
+            <label for="noun-text">Noun2:</label>
+            <textarea id="SNOUN2-textArea"></textarea>
+          </div>
+          <div class="noun-input-element">
+            <label for="noun-text">Noun3:</label>
+            <textarea id="SNOUN3-textArea"></textarea>
+          </div>
+          <div class="noun-input-element">
+            <label for="noun-text">Noun4:</label>
+            <textarea id="SNOUN4-textArea"></textarea>
+          </div>
+          <div class="noun-input-element">
+            <label for="noun-text">Noun5:</label>
+            <textarea id="SNOUN5-textArea"></textarea>
+          </div>
+          <div class="noun-input-element">
+            <label for="noun-text">Noun6:</label>
+            <textarea id="SNOUN6-textArea"></textarea>
+          </div>
+          <div class="noun-input-element">
+            <label for="noun-text">Noun7:</label>
+            <textarea id="SNOUN7-textArea"></textarea>
+          </div>
+          <div class="noun-input-element">
+            <label for="noun-text">Noun8:</label>
+            <textarea id="SNOUN8-textArea"></textarea>
+          </div>
+
+          <div class="adj-input-element">
+            <label for="adj-text">Adjective:</label>
+            <textarea id="SADJ1-textArea"></textarea>
+          </div> -->
+
+					<div class="verb-input-element">
+						<label for="verb-text">Verb1:</label>
+						<textarea id="verb-text"></textarea>
 					</div>
 					<div class="verb-input-element">
 						<label for="verb-text">Verb:</label>
@@ -184,69 +231,58 @@
 				<div class="modal-footer">
 					<button type="button" id="star-wars-modal-cancel-button">Cancel</button>
 					<button type="button" id="star-wars-modal-accept-button">Create MadLib</button>
-						<div id="modal-backdrop" class="hidden"></div>
-						<div id="create-twit-modal" class="hidden">
-							<div class="modal-header">
-						 		<h3>Your verison of StarWars</h3>
-								<button type="button" class="modal-close-button">&times;</button>
-							</div>
-							 <div class="modal-body">
-							 	<p> VADER:
-									There is no (Noun).  Don't make
-									me (Verb) you.  You do not yet
-									realize your importance.  You
-									have only begun to discover your
-									(Noun2).  Join me and I will complete
-									your training.  With our combined
-									strength, we can end this destructive
-									(Noun) and bring order to the
-									(Noun).
 
-									LUKE:
-									I'll never join you!
-
-									VADER:
-									If you only knew the (Noun2) of the
-									(Adjective) side.  Obi-Wan never told
-									you what happened to your (Noun).
-
-									LUKE:
-									He told me enough!  It was you
-									who killed him.
-
-									VADER:
-									No.  I am your (Noun1).
-
-									LUKE:
-									No.  No.  That's not true!
-									That's impossible!
-
-									VADER:
-									Search your (verb).  You know
-									it to be true.
-
-									LUKE:
-									No!  No!  No!
-
-									VADER:
-									Luke.  You can destroy the (Noun).
-									He has foreseen this.  It is your
-									destiny.  Join me, and together
-									we can rule the (Noun) as (Noun1)
-									and (Noun).  Come with me.  It is the
-									only way.</p>
-								</div>
-							</div>
-
-						</div>
 				</div>
 			</div>
+
 		</div>
 
-
-
-
-
+    <div id="star-wars-text" class="hidden">
+      <h3>Your version of Star Wars</h3>
+      <p>VADER:
+      </p><p>There is no <var id="SVERB1"></var>.  Don't make
+      </p><p>me <var id="SVERB2"></var> you.  You do not yet
+      </p><p>realize your importance.  You
+      </p><p>have only begun to discover your
+      </p><p><var id="SNOUN1"></var>.  Join me and I will complete
+      </p><p>your training.  With our combined
+      </p><p>strength, we can end this destructive
+      </p><p><var id="SNOUN2"></var> and bring order to the
+      </p><p><var id="SNOUN3"></var>.
+      </p><br>
+      <p>LUKE:
+      </p><p>I'll never join you!
+      </p><br>
+      <p>VADER:
+      </p><p>If you only knew the <var id="SNOUN3"></var> of the
+      </p><p><var id="SADJ1"></var> side.  Obi-Wan never told
+      </p><p>you what happened to your <var id="SNOUN4"></var>.
+      </p><br>
+      <p>LUKE:
+      </p><p>He told me enough!  It was you
+      </p><p>who killed him.
+      </p><br>
+      <p>VADER:
+      </p><p>No.  I am your <var id="SNOUN4"></var>.
+      </p><br>
+      <p>LUKE:
+      </p><p>No.  No.  That's not true!
+      </p><p>That's impossible!
+      </p><br>
+      <p>VADER:
+      </p><p>Search your <var id="SNOUN5"></var>.  You know
+      </p><p>it to be true.
+      </p><br>
+      </p><p>LUKE:
+      </p><p>No!  No!  No!
+      </p><br>
+      </p><p>VADER:
+      </p><p>Luke.  You can destroy the <var id="SNOUN6"></var>.
+      </p><p>He has foreseen this.  It is your
+      </p><p>destiny.  Join me, and together
+      </p><p>we can rule the <var id="SNOUN7"></var> as <var id="SNOUN4"></var>
+      </p><p>and <var id="SNOUN8"></var>.  Come with me.  It is the
+      </p><p>only way.</p>
     </div>
 	</body>
 </html>
