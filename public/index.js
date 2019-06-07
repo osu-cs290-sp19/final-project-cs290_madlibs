@@ -135,4 +135,27 @@ starWarsAccept.addEventListener('click', function(event){
   var swtext = document.getElementById('star-wars-text');
   swtext.classList.toggle('hidden');
 
-})
+});
+
+var specialButton = document.getElementById('special-Button');
+var specialModal = document.getElementById('specialModal');
+specialButton.addEventListener('click', function(event){
+    specialModal.classList.toggle('hidden');
+    modal.classList.toggle('hidden');
+    var textInputs = document.getElementsByTagName('textarea');
+    for(var i = 0; i < textInputs.length; i++){
+      textInputs[i].value = "";
+    }
+});
+
+var specialGlobalCancel = document.getElementById('special-modal-close-button');
+specialGlobalCancel.addEventListener('click', function(event){
+    specialModal.classList.toggle('hidden');
+    modal.classList.toggle('hidden');
+});
+
+var specialCancelButton = document.getElementById('special-modal-cancel-button');
+specialCancelButton.addEventListener('click', function(event){
+    specialModal.classList.toggle('hidden');
+    modal.classList.toggle('hidden');
+});
