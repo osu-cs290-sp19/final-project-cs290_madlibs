@@ -135,25 +135,4 @@ starWarsAccept.addEventListener('click', function(event){
   var swtext = document.getElementById('star-wars-text');
   swtext.classList.toggle('hidden');
 
-});
-
-// ------------------ Rick Astley Text -------------- //
-
-var specialButton = document.getElementById('special-Button');
-var specialModal = document.getElementById('specialModal');
-specialButton.addEventListener('click', function(event){
-    specialModal.classList.toggle('hidden');
-    modal.classList.toggle('hidden');
-});
-
-var specialGlobalCancel = document.getElementById('special-modal-close-button');
-specialGlobalCancel.addEventListener('click', function(event){
-    specialModal.classList.toggle('hidden');
-    modal.classList.toggle('hidden');
-});
-
-var specialCancelButton = document.getElementById('special-modal-cancel-button');
-specialCancelButton.addEventListener('click', function(event){
-    specialModal.classList.toggle('hidden');
-    modal.classList.toggle('hidden');
-});
+})
