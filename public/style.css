@@ -1,49 +1,55 @@
 html{
   height: 100%;
-<<<<<<< HEAD
-
-=======
->>>>>>> 3313edb28d5d33c1465551e3c74fadb2449e4a01
 }
 
 body{
   position: relative;
   min-height: 100%;
   width: 100%;
-  height: 100%
+  height: 100%;
   top: 0px;
   margin: 0;
-  	background-color: #EAE7DC;
+  background-color: #EAE7DC; 
+
 }
 
+/* h1 tag -- title at the top of the screen */
 .site-title{
+  font-family: Helvetica;
+  text-align: center;
   position: relative;
   margin: 0;
   padding: 10px 20px;
-  font-size: 75px;
-  font-weight: 150;
-  color: #e85a4f;
+  font-size: 70pt;
+  font-weight: 10px;
+  /* color: #e85a4f; */
+  color: #ebb259;
+  text-shadow: 2px 2px 0 #000;
 }
+
+/* title at the top of the screen -- link */
 header a{
   text-decoration: none;
 }
 
+/* instructions on how to use the website */
 .how-to-play{
   /* width: 100%; */
   display: block;
-	font-family:  Roboto, Helveica, sans-serif;
+  font-family:  Roboto, Helveica, sans-serif;
   margin: 0;
-	padding: 10px 20px;
-	background-color: #e98074;
-	color: #eae7dc;
-
+  padding: 10px 20px;
+  /* background-color: #e98074; */
+  /* color: #eae7dc; */
+  color: black
 }
 
 /*---------grammar container-------------*/
+/* container where the modal buttons for definitions are */
 .grammar-container{
   height: 100%;
   width: 200px;
-  background-color: #e98074;
+  /* background-color: #e98074; */
   position: absolute;
   right: 0px;
   display: block;
@@ -60,7 +66,8 @@ header a{
     bottom: 0;
     border: 0px;
     border-radius: 20px;
-    background-color: #1abc9c;
+    /* background-color: #1abc9c; */
+    background-color: #8acfbc;
     font-size: 12pt;
     font-style: normal;
     box-shadow: 3px 3px #000;
@@ -167,12 +174,11 @@ header a{
 }
 
 .madlib-container {
-    background-color: #EAE7DC;
+    /* background-color: #1abc9c; */
     width: 95%;
 }
 
 .madlib-buttons{
-  background-color: #1abc9c;
   width: 100%;
   margin: 0;
   padding: 20px;
@@ -206,7 +212,8 @@ header a{
     bottom: 0;
     border: 0px;
     border-radius: 20px;
-    background-color: #e98074;;
+    /* background-color: #e98074;; */
+    background-color: 	#ebb259;
     font-size: 12pt;
     font-style: normal;
     box-shadow: 3px 3px #000;
