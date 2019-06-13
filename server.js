@@ -13,7 +13,7 @@ app.get('/', function(req, res, next){
   res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-app.get('save.html', req, res, next) {
+app.get('save.html', function(req, res, next){
 	res.status(200);
 	res.sendFile(path.join(__dirname + '/public/save.html'));
 });
