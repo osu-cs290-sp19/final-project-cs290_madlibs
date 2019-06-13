@@ -132,10 +132,24 @@ starWarsAccept.addEventListener('click', function(event){
   starwarsModal.classList.toggle('hidden');
   modal.classList.toggle('hidden');
 
-  var swtext = document.getElementById('star-wars-text');
+ if(verb1.innerHTML == '' && verb2.innerHTML == '' && noun1.innerHTML == '' &&
+     noun2.innerHTML == '' && noun3.innerHTML == '' && noun4.innerHTML == '' &&
+	 noun5.innerHTML == '' && noun6.innerHTML == '' && noun7.innerHTML == '' &&
+	 noun8.innerHTML == '' && adj1.innerHTML == '') {
+		 alert('Please enter all the words into the text boxes or hit cancel to exit.');
+  }
+  else {
+	var swtext = document.getElementById('star-wars-text');
+    swtext.classList.toggle('hidden');
+	modal.classList.toggle('hidden');
+	starwarsModal.classList.toggle('hidden');
+  }
+});
+
+ /* var swtext = document.getElementById('star-wars-text');
   swtext.classList.toggle('hidden');
 
-});
+});*/
 
 var specialButton = document.getElementById('special-Button');
 var specialModal = document.getElementById('specialModal');
