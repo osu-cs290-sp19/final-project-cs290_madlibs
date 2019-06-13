@@ -147,10 +147,6 @@ starWarsAccept.addEventListener('click', function(event){
   }
 });
 
-var saveAndCreate = document.getElementById('star-wars-modal-create-save');
-saveAndCreate.addEventListener('click', function(event) {
-});
-
 var specialButton = document.getElementById('special-Button');
 var specialModal = document.getElementById('specialModal');
 specialButton.addEventListener('click', function(event){
