@@ -6,7 +6,7 @@ function createMadLib(adv, verb1, verb2, noun1, noun2, noun3) {
 		noun1: noun1,
 		noun2: noun2,
 		noun3: noun3
-	});
+	};
 	var contentHTML = Handlebars.templates.madLibs(madLibContent);
 	var madLibContainer = document.getElementsByClassName('madlib-container')[0];
 	madLibContainer.insertAdjacentHTML('beforend', madLibContentHTML);
@@ -149,6 +149,7 @@ starWarsAccept.addEventListener('click', function(event){
 
 var saveAndCreate = document.getElementById('star-wars-modal-create-save');
 saveAndCreate.addEventListener('click', function(event) {
+});
 
 var specialButton = document.getElementById('special-Button');
 var specialModal = document.getElementById('specialModal');
