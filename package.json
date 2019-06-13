@@ -1,0 +1,26 @@
+{
+  "name": "final-project-cs290_madlibs",
+  "version": "1.0.0",
+  "description": "Grading critria",
+  "main": "server.js",
+  "dependencies": {
+    "handlebars": "^4.1.2",
+    "express": "^4.17.1",
+    "node.js": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-sp19/final-project-cs290_madlibs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-sp19/final-project-cs290_madlibs/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-sp19/final-project-cs290_madlibs#readme"
+}
