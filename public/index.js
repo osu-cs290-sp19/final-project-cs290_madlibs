@@ -143,6 +143,9 @@ starWarsAccept.addEventListener('click', function(event){
   }
 });
 
+var saveAndCreate = document.getElementById('star-wars-modal-create-save');
+saveAndCreate.addEventListener('click', function(event) {
+
 var specialButton = document.getElementById('special-Button');
 var specialModal = document.getElementById('specialModal');
 specialButton.addEventListener('click', function(event){
@@ -191,7 +194,7 @@ specialCreateButton.addEventListener('click', function(event) {
 	rVerb5.innerHTML = textArea[3].value;
 	rVerb6.innerHTML = textArea[4].value;
 	rVerb7.innerHTML = textArea[5].value;
-	rVerb8.innerHTML = textArea[6].value;
+    rVerb8.innerHTML = textArea[6].value;
 	rNoun1.innerHTML = textArea[7].value;
 	rNoun2.innerHTML = textArea[8].value;
 	rNoun3.innerHTML = textArea[9].value;
@@ -212,3 +215,5 @@ if(rVerb1.innerHTML == '' && /*rVerb2.innerHTML == '' &&*/ rVerb3.innerHTML == '
 	specialModal.classList.toggle('hidden');
   }
 });
+
+
