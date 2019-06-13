@@ -120,11 +120,6 @@ starWarsAccept.addEventListener('click', function(event){
   noun1.innerHTML = textArea[2].value;
   noun2.innerHTML = textArea[3].value;
   noun3.innerHTML = textArea[4].value;
-  noun4.innerHTML = textArea[5].value;
-  noun5.innerHTML = textArea[6].value;
-  noun6.innerHTML = textArea[7].value;
-  noun7.innerHTML = textArea[8].value;
-  noun8.innerHTML = textArea[9].value;
   adj1.innerHTML = textArea[10].value;
 
   noun42.innerHTML = textArea[5].value;
@@ -133,9 +128,7 @@ starWarsAccept.addEventListener('click', function(event){
   modal.classList.toggle('hidden');
 
  if(verb1.innerHTML == '' && verb2.innerHTML == '' && noun1.innerHTML == '' &&
-     noun2.innerHTML == '' && noun3.innerHTML == '' && noun4.innerHTML == '' &&
-	 noun5.innerHTML == '' && noun6.innerHTML == '' && noun7.innerHTML == '' &&
-	 noun8.innerHTML == '' && adj1.innerHTML == '') {
+     noun2.innerHTML == '' && noun3.innerHTML == '' && adj1.innerHTML == '') {
 		 alert('Please enter all the words into the text boxes or hit cancel to exit.');
   }
   else {
