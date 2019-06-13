@@ -1,3 +1,21 @@
+function createMadLib(adv, verb1, verb2, noun1, noun2, noun3) {
+	var madLibContent = {
+		adv: adv,
+		verb1: verb1,
+		verb2: verb2,
+		noun1: noun1,
+		noun2: noun2,
+		noun3: noun3
+	});
+	var contentHTML = Handlebars.templates.madLibs(madLibContent);
+	var madLibContainer = document.getElementsByClassName('madlib-container')[0];
+	madLibContainer.insertAdjacentHTML('beforend', madLibContentHTML);
+}
+
+function insertNewMadLib(adv, verb1, verb2, noun1, noun2, noun3) {
+	createMadLib(adv, verb1, verb2, noun1, noun2, noun3);
+}
+
 var modal = document.getElementById("modal-backdrop");
 var verbButton = document.getElementById("verb-Button");
 var verbModal = document.getElementById("verb-modal");
