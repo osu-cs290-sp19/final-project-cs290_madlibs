@@ -104,11 +104,6 @@ starWarsAccept.addEventListener('click', function(event){
   var noun1 = document.getElementById('SNOUN1');
   var noun2 = document.getElementById('SNOUN2');
   var noun3 = document.getElementById('SNOUN3');
-  var noun4 = document.getElementById('SNOUN4');
-  var noun5 = document.getElementById('SNOUN5');
-  var noun6 = document.getElementById('SNOUN6');
-  var noun7 = document.getElementById('SNOUN7');
-  var noun8 = document.getElementById('SNOUN8');
   var adj1 = document.getElementById('SADJ1');
 
   var noun42 = document.getElementById('SNOUN4-2');
@@ -120,9 +115,7 @@ starWarsAccept.addEventListener('click', function(event){
   noun1.innerHTML = textArea[2].value;
   noun2.innerHTML = textArea[3].value;
   noun3.innerHTML = textArea[4].value;
-  adj1.innerHTML = textArea[10].value;
-
-  noun42.innerHTML = textArea[5].value;
+  adj1.innerHTML = textArea[5].value;
 
  if(verb1.innerHTML == '' && verb2.innerHTML == '' && noun1.innerHTML == '' &&
      noun2.innerHTML == '' && noun3.innerHTML == '' && adj1.innerHTML == '') {
@@ -164,40 +157,25 @@ specialCancelButton.addEventListener('click', function(event){
 
 var specialCreateButton = document.getElementById('special-modal-accept-button');
 specialCreateButton.addEventListener('click', function(event) {
-	var rVerb3 = document.getElementById('RVERB3');
-	var rNoun1 = document.getElementById('RNOUN1');
-	var rNoun2 = document.getElementById('RNOUN2');
-	var rAdv1 = document.getElementById('RADVJECTIVE1');
-	var rNoun3 = document.getElementById('RNOUN3');
-	var rVerb1 = document.getElementById('RVERB1');
-	var rVerb6 = document.getElementById('RVERB6');
-	var rVerb4 = document.getElementById('RVERB4');
-	var rVerb5 = document.getElementById('RVERB5');
-	var rVerb6 = document.getElementById('RVERB6');
-	var rVerb7 = document.getElementById('RVERB7');
-	var rVerb8 = document.getElementById('RVERB8');
-	var rNoun4 = document.getElementById('RNOUN4');
+  var verb1 = document.getElementById('RVERB1');
+  var verb2 = document.getElementById('RVERB2');
+  var noun1 = document.getElementById('RNOUN1');
+  var noun2 = document.getElementById('RNOUN2');
+  var noun3 = document.getElementById('RNOUN3');
+  var adj1 = document.getElementById('RADJECTIVE1');
 
 	var textArea = document.getElementsByTagName('textarea');
 
 	rVerb1.innerHTML = textArea[0].value;
-	//rVerb2.innerHTML = textArea[1].value;
-	rVerb3.innerHTML = textArea[1].value;
-	rVerb4.innerHTML = textArea[2].value;
-	rVerb5.innerHTML = textArea[3].value;
-	rVerb6.innerHTML = textArea[4].value;
-	rVerb7.innerHTML = textArea[5].value;
-    rVerb8.innerHTML = textArea[6].value;
-	rNoun1.innerHTML = textArea[7].value;
-	rNoun2.innerHTML = textArea[8].value;
-	rNoun3.innerHTML = textArea[9].value;
-	rNoun4.innerHTML = textArea[10].value;
-	rAdv1.innerHTML = textArea[11].value;
+	rVerb2.innerHTML = textArea[1].value;
+	rNoun1.innerHTML = textArea[2].value;
+	rNoun2.innerHTML = textArea[3].value;
+	rNoun3.innerHTML = textArea[4].value;
+	rNoun4.innerHTML = textArea[5].value;
+	rAdv1.innerHTML = textArea[6].value;
 
-if(rVerb1.innerHTML == '' && /*rVerb2.innerHTML == '' &&*/ rVerb3.innerHTML == '' &&
-     rVerb4.innerHTML == '' && rVerb5.innerHTML == '' && rVerb6.innerHTML == '' &&
-	 rVerb7.innerHTML == '' && rVerb8.innerHTML == '' && rNoun1.innerHTML == '' &&
-	 rNoun2.innerHTML == '' && rNoun3.innerHTML == '' && rNoun4.innerHTML == '' &&
+if(rVerb1.innerHTML == '' && rVerb2.innerHTML == '' && rNoun1.innerHTML == '' &&
+	 rNoun2.innerHTML == '' && rNoun3.innerHTML == '' &&
 	 rAdv1.innerHTML == '') {
 		 alert('Please enter all the words into the text boxes or hit cancel to exit.');
   }
@@ -208,5 +186,3 @@ if(rVerb1.innerHTML == '' && /*rVerb2.innerHTML == '' &&*/ rVerb3.innerHTML == '
 	specialModal.classList.toggle('hidden');
   }
 });
-
-
