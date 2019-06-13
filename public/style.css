@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Neon";
+    src: url("Halogen Gas Lights.otf");
+}
+
 html{
   height: 100%;
 }
@@ -9,13 +14,13 @@ body{
   height: 100%;
   top: 0px;
   margin: 0;
-  background-color: #EAE7DC; 
+  background-color: #622f75; 
 
 }
 
 /* h1 tag -- title at the top of the screen */
 .site-title{
-  font-family: Helvetica;
+  font-family: Neon;
   text-align: center;
   position: relative;
   margin: 0;
@@ -39,9 +44,27 @@ header a{
   font-family:  Roboto, Helveica, sans-serif;
   margin: 0;
   padding: 10px 20px;
-  /* background-color: #e98074; */
-  /* color: #eae7dc; */
-  color: black
+  background-color: #FFD700;
+  color: #fff;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 /*---------grammar container-------------*/
@@ -290,4 +313,8 @@ text-align: center;
 
 .modal-body textarea{
   width: 250px;
+}
+
+#special-text{
+    text-align: center;
 }
