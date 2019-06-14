@@ -35,14 +35,15 @@ app.get('/previous', function(req, res, next) {
 	if (err) {
 	  res.status(500).send({
 		error: "Error fetching people from DB"
-	});		
+	});
    } else {
 	  console.log("=== wordType: ", wordType);
-	   res.status(200).render('madlibContainer', {
+	   res.status(200).render('previous', {
 		wordType: wordType
 	});
    }
  });
+   // res.status(200).render("previous");
 });
 
 /*app.get('save.html', function(req, res, next){
