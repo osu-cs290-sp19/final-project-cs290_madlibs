@@ -29,15 +29,7 @@ var adjButton = document.getElementById("adj-Button");
 var adjModal = document.getElementById("adj-modal");
 var adjCloseButton = document.getElementById('close-adj-button');
 
-var proButton = document.getElementById("pro-Button");
-var proModal = document.getElementById("pro-modal");
-var proCloseButton = document.getElementById('close-pro-button');
-
-var advButton = document.getElementById("adv-Button");
-var advModal = document.getElementById("adv-modal");
-var advCloseButton = document.getElementById('close-adv-button');
-
-// Open verb
+//Open verb
 verbButton.addEventListener('click', function(event){
   verbModal.classList.toggle('hidden');
   modal.classList.toggle('hidden');
