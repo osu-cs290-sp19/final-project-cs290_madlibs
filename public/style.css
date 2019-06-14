@@ -72,12 +72,13 @@ header a{
 .grammar-container{
   height: 100%;
   width: 200px;
-   background-color: #9e7cd7; //#8acfbc;  //#90d4ed;//#e98074;
+   /* background-color: #9e7cd7; //#8acfbc;  //#90d4ed;//#e98074; */
   position: absolute;
   right: 0px;
   display: block;
   text-align: center;
   padding-top: 8px;
+  top: 300px;
 }
 
 .grammar-container button{
@@ -198,14 +199,14 @@ header a{
 
 .madlib-container {
     /* background-color: #1abc9c; */
-    width: 95%;
+    width: 100%;
 }
 
 .madlib-buttons{
   width: 100%;
   margin: 0;
   padding: 20px;
-  text-align: left;
+  text-align: center;
   display: inline-block;
 }
 
@@ -244,35 +245,6 @@ header a{
     background-color: #8acfbc;//#5699c6;
     padding: 25px;
 }
-
-/* #starWars-Button {
-    padding: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 16px;
-    width: 160px;
-    bottom: 0;
-    border: 0px;
-    border-radius: 20px;
-    background-color: #fdd5b9;
-    font-size: 12pt;
-    font-style: normal;
-    box-shadow: 3px 3px #000;
-}
-#special-Button {
-    padding: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 16px;
-    width: 160px;
-    bottom: 0;
-    border: 0px;
-    border-radius: 20px;
-    background-color: #fdd5b9;
-    font-size: 12pt;
-    font-style: normal;
-    box-shadow: 3px 3px #000;
-} */
 
 #specialModal{
     position: fixed;
