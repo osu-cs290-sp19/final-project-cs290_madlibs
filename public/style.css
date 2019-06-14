@@ -59,11 +59,11 @@ header a{
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ebb259, 0 0 40px #ebb259, 0 0 50px #ebb259, 0 0 60px #ebb259, 0 0 70px #ebb259;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #9e7cd7, 0 0 40px #9e7cd7, 0 0 50px #9e7cd7, 0 0 60px #9e7cd7, 0 0 70px #9e7cd7, 0 0 80px #9e7cd7;
   }
 }
 
@@ -95,6 +95,42 @@ header a{
     font-size: 12pt;
     font-style: normal;
     box-shadow: 3px 3px #000;
+}
+
+.previous{
+  height: 100%;
+  width: 200px;
+   /* background-color: #9e7cd7; //#8acfbc;  //#90d4ed;//#e98074; */
+  position: absolute;
+  left: 0px;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  top: 300px;
+}
+
+.previous a{
+  text-decoration: none;
+  color: black;
+  font-size: 12pt;
+  font-style: normal;
+}
+
+#previous-words{
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 16px;
+  width: 160px;
+  bottom: 0;
+  border: 0px;
+  border-radius: 20px;
+  /* background-color: #1abc9c; */
+  background-color: #ebb259;//#8acfbc;
+  font-size: 12pt;
+  font-style: normal;
+  box-shadow: 3px 3px #000;
 }
 
 .grammar-container button:hover{
