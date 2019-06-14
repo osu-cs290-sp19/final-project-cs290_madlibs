@@ -7,8 +7,6 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
 		<link rel="stylesheet" href="./style.css" media="screen">
     <!-- <link rel="stylesheet" href="./temp.css" media="screen"> -->
-		<link rel="stylesheet" href="style.css" media="screen"> 
-        
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js" charset="utf-8"></script>
 		<script src="index.js" charset="utf-8" defer></script>
     </head>
@@ -65,46 +63,7 @@
           </div>
         </div>
       </div>
-	<body>
-        <!-- <header>
-            <h1 class="site-title">Chicken Wings</h1>
-            
-            
-            <nav class="navbar">
-                <ul class="navlist">
-                    <li class="navitem navlink active"><a href="#">Home</a></li>
-                    <li class="navitem navlink"><a href="#">Trending</a></li>
-                    <li class="navitem navlink"><a href="#">People</a></li>
-                </ul>
-            </nav>
-        </header> -->
-        
-        
-		<main class="button-container">
-				<div id="modal-backdrop" class="hidden"></div>
-				<div id="open-verb-modal" class="hidden">
-					<div class="list-of-verbs">
 
-						<div class="modal-header">
-							<h3> information about verbs</h3>
-							<button type="button" class="modal-close-button">&times;</button>
-						</div>
-
-						<div class="modal-body">
-							<div class="verb-info">
-								<label for="verb-description"> a word (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ).</label>
-							</div>
-
-						<div class="modal-footer">
-							<button type="button" class="modal-cancel-button">cancel</button>
-						</div>
-					</div>
-				</div>
-
-			<!-- <button type="button" id="noun-button"><i class="NOUNS"> Nouns</i></button>
-				<div id="modal-backdrop" class="hidden"></div>
-				<div id="open-verb-modal" class="hidden">
-					<div class="list-of-verbs">
       <div id="adj-modal" class="hidden">
         <div class="modal-dialog">
           <div class="modal-header">
@@ -205,8 +164,6 @@
 				<div class="modal-footer">
 					<button type="button" id="star-wars-modal-cancel-button">Cancel</button>
 					<button type="button" id="star-wars-modal-accept-button">Create MadLib</button>
-          <button type="button" id="star-wars-create-save"><a href="save.html">Create and Save</a></button>
-
 				</div>
 			</div>
 
@@ -260,12 +217,13 @@
       </p><p>only way.</p>
     </div>
 
+
     <div id="special-text" class="hidden">
       <h3> Rick Astley's: Never Gonna <var id="RVERB3"></var> <var id="RNOUN1"></var> Up! <h3>
 
       <p>We're no strangers to <var id="RNOUN1"></var>.
       </p><p>You know the rules and so do I
-      </p><p>A <var id"RADJECTIVE1"></var> commitment's what I'm thinking of
+      </p><p>A <var id="RADJECTIVE1"></var> commitment's what I'm thinking of
       </p><p>You wouldn't get this from any other <var id="RNOUN2"></var>
 
       </p><p>I just wanna tell you how I'm feeling
@@ -298,12 +256,16 @@
     </div>
 
       <!-- Special Inputs -->
-    <div id="specialModal" class="hidden">
-      <div class="modal-dialog">
-        <div class="modal-header">
-          <button type="button" id="special-modal-close-button">&times;</button>
-          <h3>Input Words</h3>
-          <div class="modal-body">
+
+      <div id="specialModal" class="hidden">
+  			<div class="modal-dialog">
+
+  				<div class="modal-header">
+            <button type="button" id="special-modal-close-button">&times;</button>
+  					<h3>Input Words</h3>
+  				</div>
+
+  				<div class="modal-body">
   					<div class= "input-element">
   						<label for="verb-text">Verb1:</label>
   						<textarea id="verb-text"></textarea>
@@ -312,16 +274,15 @@
   						<label for="verb-text">Verb2:</label>
   						<textarea id="verb-text"></textarea>
   					</div>
-  					</div>
   					<div class= "input-element">
-  						<label for="noun-text">Noun1:</label>
-  						<textarea id="noun-text"></textarea>
+  						<label for="noun1-text">Noun1:</label>
+  						<textarea id="noun1-text"></textarea>
   					</div>
   					<div class= "input-element">
   						<label for="noun-text">Noun2:</label>
   						<textarea id="noun-text"></textarea>
   					</div>
-            <div class= "input-element">
+  					<div class= "input-element">
   						<label for="noun-text">Noun3:</label>
   						<textarea id="noun-text"></textarea>
   					</div>
@@ -330,18 +291,14 @@
   						<textarea id="adj-text"></textarea>
   					</div>
   				</div>
-        </div>
-          <div class="modal-body">
-            <div class="modal-footer">
-              <button type="button" id="special-modal-cancel-button">Cancel</button>
-              <button type="button" id="special-modal-accept-button">Create MadLib</button>
-              <button type="button" id="special-save-create"><a href="save.html">Save and Create</a> </button>
-            </div>
-          </div>
-		<button type="button" id="starwars-button"><i class="StarWars-Madlib">StarWars Madlib</i></button>
-		<button type="button" id="verb-button"><i class="Special-Madlib">Special Madlib</i></button> -->
 
-        </div>
+  				<div class="modal-footer">
+  					<button type="button" id="special-modal-cancel-button">Cancel</button>
+  					<button type="button" id="special-modal-accept-button">Create MadLib</button>
+  				</div>
+  			</div>
+
+  		</div>
 
 	</body>
 </html>

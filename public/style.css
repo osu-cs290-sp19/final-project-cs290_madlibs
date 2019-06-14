@@ -14,8 +14,7 @@ body{
   height: 100%;
   top: 0px;
   margin: 0;
-  background-color: #622f75;
-
+  background-color: #3d3d3f; //#e1e8f0; //#EAE7DC; //#e98074; //#9e7cd7;//#622f75;
 }
 
 /* h1 tag -- title at the top of the screen */
@@ -44,8 +43,9 @@ header a{
   font-family:  Roboto, Helveica, sans-serif;
   margin: 0;
   padding: 10px 20px;
-  background-color: #FFD700;
-  color: #fff;
+  background-color: #9e7cd7; //#8acfbc; //#90d4ed;  // #FFD700;
+  color: black; //#ebb259;
+  // black;
 }
 
 .glow {
@@ -72,7 +72,7 @@ header a{
 .grammar-container{
   height: 100%;
   width: 200px;
-  /* background-color: #e98074; */
+   background-color: #9e7cd7; //#8acfbc;  //#90d4ed;//#e98074;
   position: absolute;
   right: 0px;
   display: block;
@@ -90,14 +90,14 @@ header a{
     border: 0px;
     border-radius: 20px;
     /* background-color: #1abc9c; */
-    background-color: #8acfbc;
+    background-color: #ebb259;//#8acfbc;
     font-size: 12pt;
     font-style: normal;
     box-shadow: 3px 3px #000;
 }
 
 .grammar-container button:hover{
-    background-color: #5699c6;
+    background-color: #8acfbc;//#5699c6;
     padding: 25px;
 }
 
@@ -210,10 +210,8 @@ header a{
 }
 
 #star-wars-text{
+  color: #ebb259;
   text-align: center;
-  background-color: #EAE7DC;
-  margin: 0;
-  left: 0;
 }
 
 #starWars-modal{
@@ -243,7 +241,7 @@ header a{
 }
 
 .madlib-buttons button:hover{
-    background-color: #5699c6;
+    background-color: #8acfbc;//#5699c6;
     padding: 25px;
 }
 
@@ -286,6 +284,10 @@ header a{
     overflow: scroll;
 }
 
+#special-modal-close-button{
+  float: right;
+}
+
 .modal-header h3{
 text-align: center;
 }
@@ -315,5 +317,6 @@ text-align: center;
 }
 
 #special-text{
-    text-align: center;
+  color: #ebb259;
+  text-align: center;
 }

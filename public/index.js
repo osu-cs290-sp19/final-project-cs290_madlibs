@@ -135,15 +135,21 @@ starWarsAccept.addEventListener('click', function(event){
   noun3.innerHTML = textArea[4].value;
   adj1.innerHTML = textArea[5].value;
 
- if(verb1.innerHTML == '' && verb2.innerHTML == '' && noun1.innerHTML == '' &&
-     noun2.innerHTML == '' && noun3.innerHTML == '' && adj1.innerHTML == '') {
-		 alert('Please enter all the words into the text boxes or hit cancel to exit.');
-  }
+  if(textArea[0].value == '' || textArea[1].value == '' || textArea[2].value == '' || textArea[3].value == '' || textArea[4].value == '' || textArea[5].value == '') {
+ 		 alert('Please enter all the words into the text boxes or hit cancel to exit.');
+   }
   else {
-	var swtext = document.getElementById('star-wars-text');
-    swtext.classList.toggle('hidden');
-	modal.classList.toggle('hidden');
-	starwarsModal.classList.toggle('hidden');
+    var swtext = document.getElementById('star-wars-text');
+    var sptext = document.getElementById('special-text');
+
+    if(swtext.classList == 'hidden'){
+      swtext.classList.toggle('hidden');
+    }
+    if(sptext.classList != 'hidden'){
+      sptext.classList.toggle('hidden');
+    }
+ 	modal.classList.toggle('hidden');
+ 	starwarsModal.classList.toggle('hidden');
   }
 });
 
@@ -172,32 +178,36 @@ specialCancelButton.addEventListener('click', function(event){
 
 var specialCreateButton = document.getElementById('special-modal-accept-button');
 specialCreateButton.addEventListener('click', function(event) {
-  var verb1 = document.getElementById('RVERB1');
-  var verb2 = document.getElementById('RVERB2');
-  var noun1 = document.getElementById('RNOUN1');
-  var noun2 = document.getElementById('RNOUN2');
-  var noun3 = document.getElementById('RNOUN3');
-  var adj1 = document.getElementById('RADJECTIVE1');
+  var rverb1 = document.getElementById('RVERB1');
+  var rverb2 = document.getElementById('RVERB2');
+  var rnoun1 = document.getElementById('RNOUN1');
+  var rnoun2 = document.getElementById('RNOUN2');
+  var rnoun3 = document.getElementById('RNOUN3');
+  var radj1 = document.getElementById('RADJECTIVE1');
 
-	var textArea = document.getElementsByTagName('textarea');
+  var rtextArea = document.getElementsByTagName('textarea');
 
-	rVerb1.innerHTML = textArea[0].value;
-	rVerb2.innerHTML = textArea[1].value;
-	rNoun1.innerHTML = textArea[2].value;
-	rNoun2.innerHTML = textArea[3].value;
-	rNoun3.innerHTML = textArea[4].value;
-	rNoun4.innerHTML = textArea[5].value;
-	rAdv1.innerHTML = textArea[6].value;
+  rverb1.innerHTML = rtextArea[6].value;
+  rverb2.innerHTML = rtextArea[7].value;
+  rnoun1.innerHTML = rtextArea[8].value;
+  rnoun2.innerHTML = rtextArea[9].value;
+  rnoun3.innerHTML = rtextArea[10].value;
+   radj1.innerHTML = rtextArea[11].value;
 
-if(rVerb1.innerHTML == '' && rVerb2.innerHTML == '' && rNoun1.innerHTML == '' &&
-	 rNoun2.innerHTML == '' && rNoun3.innerHTML == '' &&
-	 rAdv1.innerHTML == '') {
+ if(rtextArea[6].value == '' || rtextArea[7].value == '' || rtextArea[8].value == '' || rtextArea[9].value == '' || rtextArea[10].value == '' || rtextArea[11].value == '') {
 		 alert('Please enter all the words into the text boxes or hit cancel to exit.');
   }
-  else {
-	var sLibText = document.getElementById('special-text');
-	sLibText.classList.toggle('hidden');
+ else {
+   var swtext = document.getElementById('star-wars-text');
+   var sptext = document.getElementById('special-text');
+
+   if(swtext.classList != 'hidden'){
+     swtext.classList.toggle('hidden');
+   }
+   if(sptext.classList == 'hidden'){
+     sptext.classList.toggle('hidden');
+   }
 	modal.classList.toggle('hidden');
 	specialModal.classList.toggle('hidden');
-  }
+ }
 });
