@@ -1,0 +1,95 @@
+<body>
+  <div class="grammar-container">
+      <button type="button" id="verb-Button"> <i class="VERB">Verbs</i></button>
+      <button type="button" id="noun-Button"> <i class="NOUN">Nouns</i></button>
+      <button type="button" id="adj-Button"> <i class="ADJECTIVE">Adjectives</i></button>
+      <button type="button" id="pro-Button"> <i class="PRONOUN">Pronoun</i></button>
+      <button type="button" id="adv-Button"> <i class="ADVERB">Adverbs</i></button>
+  </div>
+  <!-- grammar modals -->
+  <div class="grammar-modals">
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="verb-modal" class="hidden">
+      <div class="modal-dialog">
+        <div class="modal-header">
+            <h3>Information about verbs</h3>
+        </div>
+        <div class="modal-body">
+          <div class="verb-element">
+            <p id="verb-definition">a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen..</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="close-verb-button" >close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="noun-modal" class="hidden">
+      <div class="modal-dialog">
+        <div class="modal-header">
+            <h3>Information about nouns</h3>
+        </div>
+        <div class="modal-body">
+          <div class="noun-element">
+            <p id="verb-definition">a word <var id="other than a pronoun"></var> used to identify any of a class of people, places, or things <var id=" common noun "></var>, or to name a particular one of these <var id=" proper noun "></var>.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="close-noun-button" >close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="adj-modal" class="hidden">
+      <div class="modal-dialog">
+        <div class="modal-header">
+            <h3>Information about adjectives</h3>
+        </div>
+        <div class="modal-body">
+          <div class="adj-element">
+            <p id="verb-definition">An adjective modifies <var id="limits or describes"></var> a noun or a pronoun.  Essentially, it provides more information about a person, place, or thing. For instance, in the sentence Frank is a tall, skinny man, both tall and skinny are adjectives as they are used to describe Frank. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="close-adj-button" >close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Pronouns/-->
+    <div id="pro-modal" class="hidden">
+      <div class="modal-dialog">
+        <div class="modal-header">
+            <h3>Information about pronouns</h3>
+        </div>
+        <div class="modal-body">
+          <div class="pro-element">
+            <p id="verb-definition">A pronoun is a word that is used to replace a noun  For example, instead of saying “Sam likes pizza” we can use “He” as a substitute for Sam.  Writers need to be careful with pronoun use, as pronouns should only be used after a noun has been used first, and it must be clear which noun the pronoun is replacing.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="close-pro-button" >close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Adverbs/-->
+    <div id="adv-modal" class="hidden">
+      <div class="modal-dialog">
+        <div class="modal-header">
+            <h3>Information about adverbs</h3>
+        </div>
+        <div class="modal-body">
+          <div class="adv-element">
+            <p id="verb-definition">Similar to adjectives, an adverb modifies a verb, an adjective, or another adverb. In the sentence Susan walked slowly towards the door, the word slowly serves as an adverb since it describes how she walked.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="close-adv-button" >close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

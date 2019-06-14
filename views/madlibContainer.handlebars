@@ -1,0 +1,179 @@
+<main class="madlib-container">
+  <div class="madlib-buttons">
+    <button type="button" id="starWars-Button"><i class="STARWARS">Star Wars Madlib</i></button>
+    <button type="button" id="special-Button"><i class="SPECIAL">Special Madlib</i></button>
+  </div>
+
+<div id="starWars-modal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <button type="button" id="star-wars-modal-close-button">&times;</button>
+      <h3>Input Words</h3>
+    </div>
+
+    <div class="modal-body">
+      <div class= "input-element">
+        <label for="verb-text">Verb1:</label>
+        <textarea id="verb-text"></textarea>
+      </div>
+      <div class= "input-element">
+        <label for="verb-text">Verb2:</label>
+        <textarea id="verb-text"></textarea>
+      </div>
+      <div class= "input-element">
+        <label for="noun1-text">Noun1:</label>
+        <textarea id="noun1-text"></textarea>
+      </div>
+      <div class= "input-element">
+        <label for="noun-text">Noun2:</label>
+        <textarea id="noun-text"></textarea>
+      </div>
+      <div class= "input-element">
+        <label for="noun-text">Noun3:</label>
+        <textarea id="noun-text"></textarea>
+      </div>
+      <div class="input-element">
+        <label for="adj-text">Adjective:</label>
+        <textarea id="adj-text"></textarea>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" id="star-wars-modal-cancel-button">Cancel</button>
+      <button type="button" id="star-wars-modal-accept-button">Create MadLib</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="star-wars-text" class="hidden">
+  <h3>Your version of Star Wars</h3>
+  <p>VADER:
+  </p><p>There is no <var id="SVERB1"></var>.  Don't make
+  </p><p>me <var id="SVERB2"></var> you.  You do not yet
+  </p><p>realize your importance.  You
+  </p><p>have only begun to discover your
+  </p><p><var id="SNOUN1"></var>.  Join me and I will complete
+  </p><p>your training.  With our combined
+  </p><p>strength, we can end this destructive
+  </p><p><var id="SNOUN2"></var> and bring order to the
+  </p><p><var id="SNOUN3"></var>.
+  </p><br>
+  <p>LUKE:
+  </p><p>I'll never join you!
+  </p><br>
+  <p>VADER:
+  </p><p>If you only knew the <var id="SNOUN3"></var> of the
+  </p><p><var id="SADJ1"></var> side.  Obi-Wan never told
+  </p><p>you what happened to your <var id="SNOUN4"></var>.
+  </p><br>
+  <p>LUKE:
+  </p><p>He told me enough!  It was you
+  </p><p>who killed him.
+  </p><br>
+  <p>VADER:
+  </p><p>No.  I am your <var id="SNOUN4"></var>.
+  </p><br>
+  <p>LUKE:
+  </p><p>No.  No.  That's not true!
+  </p><p>That's impossible!
+  </p><br>
+  <p>VADER:
+  </p><p>Search your <var id="SNOUN5"></var>.  You know
+  </p><p>it to be true.
+  </p><br>
+  </p><p>LUKE:
+  </p><p>No!  No!  No!
+  </p><br>
+  </p><p>VADER:
+  </p><p>Luke.  You can destroy the <var id="SNOUN6"></var>.
+  </p><p>He has foreseen this.  It is your
+  </p><p>destiny.  Join me, and together
+  </p><p>we can rule the <var id="SNOUN7"></var> as <var id="SNOUN4-2"></var>
+  </p><p>and <var id="SNOUN8"></var>.  Come with me.  It is the
+  </p><p>only way.</p>
+</div>
+
+
+<div id="special-text" class="hidden">
+  <h3> Rick Astley's: Never Gonna <var id="RVERB3"></var> <var id="RNOUN1"></var> Up! <h3>
+
+  <p>We're no strangers to <var id="RNOUN1"></var>.
+  </p><p>You know the rules and so do I
+  </p><p>A <var id="RADJECTIVE1"></var> commitment's what I'm thinking of
+  </p><p>You wouldn't get this from any other <var id="RNOUN2"></var>
+
+  </p><p>I just wanna tell you how I'm feeling
+  </p><p>Gotta make you understand
+
+  </p><p>Never gonna give <var id="RNOUN3"></var> <var id="RVERB1"></var> up
+  </p><p>Never gonna let you down
+  </p><p>Never gonna run around and desert you
+  </p><p>Never gonna make you <var id="RVERB2"></var>
+  </p><p>Never gonna say goodbye
+  </p><p>Never gonna tell a lie and hurt you
+
+  </p><p>We've known each other for so long
+  </p><p>Your heart's been aching, but
+  </p><p>You're too shy to say it
+  </p><p>Inside, we both know what's been going on
+  </p><p>We know the game and we're gonna play it
+
+  </p><p>And if you ask me how I'm feeling
+  </p><p>Don't tell me you're too blind to see
+
+  </p><p>Never gonna <var id="RNOUN3"></var> <var id="RVERB1"></var> up
+  </p><p>Never gonna let you down
+  </p><p>Never gonna run around and desert you
+  </p><p>Never gonna make you cry
+  </p><p>Never gonna say goodbye
+  </p><p>Never gonna tell a lie and hurt you
+
+
+</div>
+
+  <!-- Special Inputs -->
+
+  <div id="specialModal" class="hidden">
+    <div class="modal-dialog">
+
+      <div class="modal-header">
+        <button type="button" id="special-modal-close-button">&times;</button>
+        <h3>Input Words</h3>
+      </div>
+
+      <div class="modal-body">
+        <div class= "input-element">
+          <label for="verb-text">Verb1:</label>
+          <textarea id="verb-text"></textarea>
+        </div>
+        <div class= "input-element">
+          <label for="verb-text">Verb2:</label>
+          <textarea id="verb-text"></textarea>
+        </div>
+        <div class= "input-element">
+          <label for="noun1-text">Noun1:</label>
+          <textarea id="noun1-text"></textarea>
+        </div>
+        <div class= "input-element">
+          <label for="noun-text">Noun2:</label>
+          <textarea id="noun-text"></textarea>
+        </div>
+        <div class= "input-element">
+          <label for="noun-text">Noun3:</label>
+          <textarea id="noun-text"></textarea>
+        </div>
+        <div class="input-element">
+          <label for="adj-text">Adjective:</label>
+          <textarea id="adj-text"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" id="special-modal-cancel-button">Cancel</button>
+        <button type="button" id="special-modal-accept-button">Create MadLib</button>
+      </div>
+    </div>
+
+  </main>
