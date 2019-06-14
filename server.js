@@ -7,7 +7,7 @@ var MongoClient = require('mongodb').MongoClient;
 const dotenv = require('dotenv').config();
 
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 9999;
 
 var mongoHost = process.env.MONGO_HOST || '127.0.0.1';
 var mongoPort = process.env.MONGO_PORT || 27017;
