@@ -159,15 +159,19 @@ specialCreateButton.addEventListener('click', function(event) {
   var rverb1 = document.getElementById('RVERB1');
   var rverb2 = document.getElementById('RVERB2');
   var rnoun1 = document.getElementById('RNOUN1');
+	var rnoun12 = document.getElementById('RNOUN12');
   var rnoun2 = document.getElementById('RNOUN2');
   var rnoun3 = document.getElementById('RNOUN3');
   var radj1 = document.getElementById('RADJECTIVE1');
 
   var rtextArea = document.getElementsByTagName('textarea');
 
+	console.log(rtextArea);
+
   rverb1.innerHTML = rtextArea[6].value;
   rverb2.innerHTML = rtextArea[7].value;
   rnoun1.innerHTML = rtextArea[8].value;
+	rnoun12.innerHTML = rtextArea[8].value;
   rnoun2.innerHTML = rtextArea[9].value;
   rnoun3.innerHTML = rtextArea[10].value;
    radj1.innerHTML = rtextArea[11].value;
