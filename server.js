@@ -29,7 +29,7 @@ app.get('/', function(req, res, next){
   // res.status(200);
   // res.sendFile(path.join(__dirname + '/public/index.html'));
   res.status(200);
-  res.render('madLibContainer');
+  res.render('madlibContainer');
 });
 
 app.get('save.html', function(req, res, next){
