@@ -70,28 +70,6 @@ adjCloseButton.addEventListener('click', function(event){
   modal.classList.toggle('hidden');
 });
 
-//pro button
-proButton.addEventListener('click', function(event){
-  proModal.classList.toggle('hidden');
-  modal.classList.toggle('hidden');
-});
-
-proCloseButton.addEventListener('click', function(event){
-  proModal.classList.toggle('hidden');
-  modal.classList.toggle('hidden');
-});
-
-//adv button
-advButton.addEventListener('click', function(event){
-  advModal.classList.toggle('hidden');
-  modal.classList.toggle('hidden');
-});
-
-advCloseButton.addEventListener('click', function(event){
-  advModal.classList.toggle('hidden');
-  modal.classList.toggle('hidden');
-});
-
 var starwarsButton = document.getElementById('starWars-Button');
 var starwarsModal = document.getElementById('starWars-modal');
 starwarsButton.addEventListener('click', function(event){
