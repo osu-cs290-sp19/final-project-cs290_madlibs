@@ -7,7 +7,7 @@ var MongoClient = require('mongodb').MongoClient;
 const dotenv = require('dotenv').config();
 
 var app = express();
-var port = process.env.PORT || 9999;
+var port = process.env.PORT || 7500;
 
 var mongoHost = process.env.MONGO_HOST || '127.0.0.1';
 var mongoPort = process.env.MONGO_PORT || 27017;
@@ -18,34 +18,33 @@ var mongoDBName = process.env.MONGO_DB_NAME;
 // var mongoUrl = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`;
 var mongoURL = 'mongodb://' + mongoUser + ':' + mongoPassword + '@' + mongoHost + ':' + mongoPort + '/' + mongoDBName;
 
-
-// if(fs.existsSync('.dev')){
-//     mongoUrl = `mongodb://${mongoHost}:${mongoPort}/${mongoDBName}`;
-// }
-
 var db = null;
 
-// app.set('view engine', 'handlebars');
+app.set('view engine', 'handlebars');
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname,'public')));
+app.use(express.static('public'));
 
 app.get('/', function(req, res, next){
-  res.status(200);
-  res.sendFile(path.join(__dirname + '/public/index.html'));
+    res.status(200).render('madlib');
 });
+// app.use(express.static(path.join(__dirname,'public')));
 
-app.get('save.html', function(req, res, next){
-	res.status(200);
-	res.sendFile(path.join(__dirname + '/public/save.html'));
-});
-
-app.get('*', function(req, res){
-  res.status(404);
-  res.sendFile(path.join(__dirname + '/public/404.html'))
-});
-
+// app.get('/', function(req, res, next){
+//   res.status(200);
+//   res.sendFile(path.join(__dirname + '/public/index.html'));
+// });
+// 
+// app.get('save.html', function(req, res, next){
+// 	res.status(200);
+// 	res.sendFile(path.join(__dirname + '/public/save.html'));
+// });
+// 
+// app.get('*', function(req, res){
+//   res.status(404);
+//   res.sendFile(path.join(__dirname + '/public/404.html'))
+// });
 
 MongoClient.connect(mongoURL, { useNewUrlParser: true }, function(err, client) {
     if(err){
