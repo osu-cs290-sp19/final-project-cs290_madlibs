@@ -29,36 +29,50 @@ app.get('/', function(req, res, next) {
   res.status(200).render('madlibContainer');
 });
 
-app.get('/previous', function(req, res, next) {
+app.get('/previous/:wordId', function(req, res, next) {
+  var wordId = req.params.wordId.toLowerCase();
   var collection = db.collection('wordType');
-  collection.find({}).toArray(function (err, wordType) {
+  collection.find({ wordId: wordId}).toArray(function (err, wordType) {
 	if (err) {
 	  res.status(500).send({
 		error: "Error fetching people from DB"
 	});
    } else {
 	  console.log("=== wordType: ", wordType);
-	   res.status(200).render('previous', {
-		wordType: wordType
-	});
+	  res.status(200).render('previous', wordType[0]);
    }
  });
-   // res.status(200).render("previous");
 });
 
-/*app.get('save.html', function(req, res, next){
-	res.status(200);
-
+app.post('/previous/:wordId', function(req, res, next) {
+  var wordId = req.params.wordType.toLowerCase();
+  if(req.body && req.body.noun && req.body.verb && req.body.adjective){
+    var collection = db.collection('wordType');
+    collection.updateOne(
+      {wordId: wordId},
+      {$push: {nouns: req.body.noun}},
+      {$push: {verbs: req.body.verb}},
+      {$push: {adjectives: req.body.adjective}},
+      function(err, result){
+        if(err) {
+          res.status(500).send({
+            error: "Error inserting words in DB"
+          });
+        } else {
+          console.log("==update result", result);
+          res.status(200).send("Success");
+        }
+      }
+    );
+  } else {
+    res.status(400).send("Request needs nouns, verbs, and adjectives");
+  }
+});
 
 app.get('*', function(req, res){
   res.status(404);
   res.render('404');
 });
-
-app.listen(port, function () {
-  console.log("== Server is listening on port", port);
-});*/
-
 
  MongoClient.connect(mongoURL, { useNewUrlParser: true }, function(err, client) {
      if(err){
