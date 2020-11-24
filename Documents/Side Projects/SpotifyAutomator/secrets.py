@@ -1,0 +1,3 @@
+# Make sure to fill in your spotify client_secret information
+spotify_token = "BQDBcwZfXYOaR5psFZCEI0hU2go7KEE41ER-UiKqrp4CAJoKqe88BijHTdWafszy4M9pSA5Yo3i9-CgrrBj4nQOPkXjzeQRLCKiDDyrc75PQ1YbfbJmh7TGQHyLZLeDTtsACuU-R_ox12l1u0xV7HhCbKmhiknbFPOxfxYy64-I7QgnKKmi40uaAj5nUmmmIuQcB_kJpIv6WWK4"
+spotify_user_id = "bajracharya2017"
